@@ -1,0 +1,50 @@
+.floating-label-form-group {
+    position: relative;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    padding-right: 0;
+    padding-left: 0;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none !important;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #159a80;
+    border-color: #148f77;
+}
+
+.label {
+    position: absolute;
+    top: 100%;
+    left: 10;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.label2 {
+    top: -5%;
+}

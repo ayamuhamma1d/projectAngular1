@@ -1,0 +1,73 @@
+.layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    background-color: rgba(26, 188, 156, 0.9);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.layer:hover {
+    opacity: 1;
+}
+
+.layer i {
+    font-size: 60px;
+}
+
+.bg-success {
+    background-color: #1abc9c !important;
+}
+
+#lightBoxContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+}
+
+#lightBox {
+    margin: 10px 0;
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+}
+
+.photo {
+    width: 50%
+}
+
+p {
+    text-indent: 3em;
+    width: 70%;
+}
+
+button {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #159a80;
+    border-color: #148f77;
+}
+
+.close-btn {
+    color: #159a80;
+}
+
+i {
+    cursor: pointer;
+}

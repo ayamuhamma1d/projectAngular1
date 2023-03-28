@@ -1,0 +1,21 @@
+    header {
+        height: 100vh;
+    }
+
+    img {
+        width: 15rem;
+    }
+
+    .bg-success {
+        background-color: #1abc9c !important;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 2.75rem;
+        position: relative;
+    }
+
+    header p {
+        font-size: 23px;
+    }

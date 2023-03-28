@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg position-fixed fixed-top bg-black navbar-dark bg-body-tertiary mb-5 " [class.tests]="scrollbar==true" id="nav" (scroll)="onScroll()">
+    <div class="container">
+        <a class="navbar-brand fw-bold ps-5 logo" href="#" id="logo">START ANGULAR</a>
+        <button class="navbar-toggler text-center p-3 mb-2 fw-bolder fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     MENU<i class="fa-solid fa-bars ms-2 text-center" style="color: #ffffff;"></i>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
+
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-bold me-3 p-3 rounded-3" aria-current="page" routerLink="home" routerLinkActive="test" title="HomeComponent">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-bold me-3 p-3 rounded-3" aria-current="page" routerLink="portfolio" routerLinkActive="test" title="AboutComponent">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-bold me-3 p-3 rounded-3" aria-current="page" routerLink="about" routerLinkActive="test" title="AboutComponent">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-bold me-3 p-3 rounded-3" aria-current="page" routerLink="contact" routerLinkActive="test" title="ContactComponent">CONTACT</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>

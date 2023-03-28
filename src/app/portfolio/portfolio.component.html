@@ -1,0 +1,151 @@
+<section class="sec">
+    <div class="container w-75">
+        <div class="row text-center gy-5">
+            <h2 class="fw-bold mb-4">PORTFOLIO</h2>
+            <div class="custom">
+                <div class="line text-secondary"></div>
+                <i class="fa-solid fa-star fa-2xl icon-bg"></i>
+                <div class="line text-secondary"></div>
+            </div>
+            <div *ngFor="let x of imgDetail" class="col-md-6 col-lg-4" (click)="show=true;item=x">
+                <div class="position-relative">
+                    <img [src]="x.imgUrl" class="w-100 rounded-3" alt=" ">
+                    <div class="layer d-flex justify-content-center align-items-center rounded-3 ">
+                        <i class="fa-solid fa-plus fw-bold" style="color:#ffffff;"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="lightBoxContainer" *ngIf="show" class="justify-content-center align-items-center d-flex" #model (click)="handleModelClick($event,model)">
+    <div id="lightBox" class=" p-2 py-5 position-relative bg-white mx-auto rounded-3 text-center ">
+        <i id="closeBtn" class="fa-solid fa-xmark close-btn p-4 fs-4 position-absolute top-0 end-0 fa-2xl " (click)=" show=false"></i>
+        <div class="header text-center ">
+            <h2 class="fw-bold mb-5 text-center ">{{item.title}}</h2>
+            <div class="custom ">
+                <div class="line text-secondary "></div>
+                <i class="fa-solid fa-star fa-2xl icon-bg "></i>
+                <div class="line text-secondary "></div>
+            </div>
+        </div>
+
+        <figure class="text-center my-3 ">
+            <img [src]="item.imgUrl" class=" photo rounded-3" alt=" ">
+        </figure>
+
+        <p class="text-center mx-auto my-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+        </p>
+        <button class="btn btn-success " (click)=" show=false "><i class="fa-solid fa-xmark text-center "
+        style="color: #ffffff; "></i> close Window
+    </button>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="py-5">
+    <div class="container w-75">
+        <div class="row text-center gy-5">
+            <h2 class="fw-bold mb-4">PORTFOLIO</h2>
+            <div class="custom">
+                <div class="line text-secondary"></div>
+                <i class="fa-solid fa-star fa-2xl icon-bg"></i>
+                <div class="line text-secondary"></div>
+            </div>
+            <div *ngFor="let x of imgSrc ; let index='index'" (click)="display(index)" class=" col-md-6 col-lg-4">
+                <div class="position-relative">
+                    <img src="{{x}}" class="w-100 rounded-3" alt=" ">
+                    <div class="layer d-flex justify-content-center align-items-center rounded-3 ">
+                        <i class="fa-solid fa-plus fw-bold " style="color:#ffffff;"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="lightBoxContainer" *ngIf="visible" class=" justify-content-center align-items-center d-flex" #model (click)="handleModelClick($event,model)">
+    <div id="lightBox" class=" p-2 py-5 position-relative bg-white mx-auto rounded-3 text-center ">
+
+        <i id="closeBtn" (click)="click()" class="fa-solid fa-xmark close-btn p-4 fs-4 position-absolute top-0 end-0 fa-2xl "></i>
+        <div class="header text-center ">
+            <h2 class="fw-bold mb-5 text-center ">{{titleData}}</h2>
+            <div class="custom ">
+                <div class="line text-secondary "></div>
+                <i class="fa-solid fa-star fa-2xl icon-bg "></i>
+                <div class="line text-secondary "></div>
+            </div>
+        </div>
+
+        <figure class="text-center my-3 ">
+            <img src="{{preview}} " class="photo rounded-3 " alt=" ">
+        </figure>
+
+        <p class="text-center mx-auto my-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+        </p>
+        <button (click)="click()" class="btn btn-success "><i class="fa-solid fa-xmark text-center " style="color: #ffffff; "></i> close Window
+            </button>
+
+    </div>
+
+</div> -->

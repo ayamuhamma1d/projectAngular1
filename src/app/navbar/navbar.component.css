@@ -1,0 +1,67 @@
+    .nav-link:hover {
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+    }
+    
+    .nav-link:hover {
+        color: #1abc9c !important;
+    }
+    
+    .test {
+        color: #fff;
+        background: #1abc9c;
+    }
+    
+    .test:hover {
+        color: #fff !important;
+    }
+    
+    span {
+        font-size: 14px;
+    }
+    
+    button {
+        color: #fff;
+        background-color: #1abc9c;
+        border-color: #1abc9c;
+    }
+    
+    .bg-success:hover {
+        color: #fff;
+        background-color: #159a80;
+        border-color: #148f77;
+    }
+    
+    ul li {
+        cursor: pointer;
+    }
+    
+    .header_change {
+        padding: 20px 0;
+    }
+    
+    .new-nav {
+        background-color: #148f77;
+        padding: 10px;
+    }
+    
+    .tests {
+        padding: 25px;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+    }
+    
+    .logo {
+        font-size: 25px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+    }
